@@ -2,8 +2,15 @@
 <html>
 <head>
 	<title> Testdida för JQuery</title>
-	<script src="jquery-1.12.3.js"></script>
+	<script src="jQuery/jquery-1.12.3.js"></script>
 	<link rel="stylecheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			$("p").click(function(){
+				$(this).hide();
+			});
+		});
+	</script>
 </head>
 
 <body>
