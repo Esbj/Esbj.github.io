@@ -1,23 +1,45 @@
-.wrapper{
-	margin: 0, auto;
+/***************
+BASIC STYLING
+***************/
+.content{
+  margin: auto;
+  max-width: 60%;
+  padding: 10px;
 }
+h1, h2{
+	text-align: center;
+}
+hr{
+	max-width: 700px;
+}
+/***************
+HIDER
+***************/
 button{
 	display: inline;
 }
 #newMagic{
 	display: none;
 }
+
+.hider{
+	max-width: 40%;
+	padding-left: 10px;
+	float: left;
+	margin-top: 3.5em;
+}
+/****************
+COMMENTS
+****************/
+.comment{
+	max-width: 40%;
+	border-right: 1px solid black;
+	padding-right: 10px;
+	float: left;
+}
 .dubbelfnuttar{
 	color: red;
 }
 code{
 	background-color: #C3BBB9;
-}
-.code{
-	display: block;
-}
-.comment{
-	max-width: 500px;
-	border-right: 1px solid black;
-	padding-right: 10px;
 }

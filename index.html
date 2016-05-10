@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$("#magic").click(function(){		//Gömmer texten "hide me" och visar en ny knapp "newMagic" (more) 
+			$("#magic").click(function(){		//Gömmer texten.hideMe och visar en ny knapp "newMagic" (Undo) 
 				$(".hideMe").hide();
 				$("#newMagic").show();
 			});
@@ -23,11 +23,12 @@
 <body>
 	<div class="wrapper">
 		<h1 class="title">Javascript & jQuery</h1>
+		<hr>
 		<div class="content">
-			<div class="commentHider">
+			<div class="comment">
 				<h2>Gömm och visa ett element</h2>
 				<p>
-					Texten under knappen kommer att försvinna när man trycker på kanppen "Magic" och en ny knapp kommer framm. När man trycker på den nya knappen kommer texten tillbaka och den andra knappen försvinner.
+					Texten under knappen till höger kommer att försvinna när man trycker på kanppen "Magic" och en ny knapp kommer framm. När man trycker på den nya knappen kommer texten tillbaka och den andra knappen försvinner.
 				</p>
 				<h3>Problem under kodningen:</h3>
 				<p>
@@ -50,9 +51,12 @@
 				</div>
 				<div class="hider">
 					<button id="magic">Magic</button>
-					<button id="newMagic">More</button>
+					<button id="newMagic">Undo</button>
 					<p class="hideMe">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec fringilla lorem. Nullam vel magna bibendum nisl porttitor rhoncus. Morbi tempus nec ligula ultrices malesuada. Quisque est tortor, blandit in malesuada sed, aliquam sit amet ex. Maecenas nunc ipsum, pulvinar id dolor sed, pharetra pulvinar massa. Aliquam eleifend augue vitae vestibulum rhoncus. Vivamus vel leo felis. Integer imperdiet justo odio, ac varius metus venenatis non. Nullam accumsan varius nibh, sed euismod sem pellentesque vitae. Praesent vulputate nulla in augue molestie pretium. In hac habitasse platea dictumst. Proin et ante id arcu facilisis rutrum. Pellentesque cursus, ante ut lacinia malesuada, ante quam efficitur purus, eget cursus arcu urna id felis.
+					</p>
+					<p class="hideme">
+						Donec ullamcorper dui lectus, sit amet rutrum urna lacinia at. Vivamus vel nunc massa. Etiam tincidunt dictum tellus. Cras bibendum lacus magna, in consectetur nunc dictum at. In tellus orci, facilisis vel maximus in, aliquet finibus diam. Etiam imperdiet porttitor neque ac congue. Suspendisse at lorem id tortor accumsan posuere. Donec sodales justo mattis urna rutrum, et efficitur libero pulvinar
 					</p>
 				</div>
 		</div>
