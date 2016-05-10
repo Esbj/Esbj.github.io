@@ -1,14 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	
-	<title>TESTING SITE FOR JQUERY</title>
+	<meta charset="UTF-8"> 
+	<title>Testsida för jQuery</title>
 	<script src="jQuery/jquery-1.12.3.js"></script>
-	<link rel="stylecheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$("button").click(function(){
-				$(.hideMe).hide();
+			$("#magic").click(function(){		//Gömmer texten "hide me" och visar en ny knapp "newMagic" (more) 
+				$(".hideMe").hide();
+				$("#newMagic").show();
+			});
+			
+			$("#newMagic").click(function(){	//Visar texten igen och gömmer knapp nr 2
+				$(".hideMe").show();
+				$("#newMagic").hide();
 			});
 		});
 	</script>
@@ -16,14 +22,39 @@
 
 <body>
 	<div class="wrapper">
-		<h1 class="title">Javascript & JQuery</h1>
+		<h1 class="title">Javascript & jQuery</h1>
 		<div class="content">
-			<div class="hider">
-			<button>Test</button>
-				<p class="hideMe">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec fringilla lorem. Nullam vel magna bibendum nisl porttitor rhoncus. Morbi tempus nec ligula ultrices malesuada. Quisque est tortor, blandit in malesuada sed, aliquam sit amet ex. Maecenas nunc ipsum, pulvinar id dolor sed, pharetra pulvinar massa. Aliquam eleifend augue vitae vestibulum rhoncus. Vivamus vel leo felis. Integer imperdiet justo odio, ac varius metus venenatis non. Nullam accumsan varius nibh, sed euismod sem pellentesque vitae. Praesent vulputate nulla in augue molestie pretium. In hac habitasse platea dictumst. Proin et ante id arcu facilisis rutrum. Pellentesque cursus, ante ut lacinia malesuada, ante quam efficitur purus, eget cursus arcu urna id felis.
+			<div class="commentHider">
+				<h2>Gömm och visa ett element</h2>
+				<p>
+					Texten under knappen kommer att försvinna när man trycker på kanppen "Magic" och en ny knapp kommer framm. När man trycker på den nya knappen kommer texten tillbaka och den andra knappen försvinner.
 				</p>
-			</div>
+				<h3>Problem under kodningen:</h3>
+				<p>
+					Jag kollade upp koden på w3schools.com och kopierade den därifrån, dock var deras exempel att man tryckte på texten för att få den att fungera, jag ville ha knappar så jag fick göra om lite och skapa nya ellement. Detta skapade i vanlig ordning en rad olika problem. T.ex. att man är tvungen att ha citationstecken när man påverkar ett element koden inte står i.
+				</p>
+				<div class="code">
+					<p>
+					<em><strong>Alltså såhär:</em></strong><br>
+					<code>
+						$(<span class="dubbelfnuttar">"</span>ellementJagVillPåverka<span class="dubbelfnuttar">"</span>).händelse();
+					</code>
+					</p>
+					<p>
+					<em><strong>Och inte såhär:</em></strong><br>
+					<code>
+						$(ellementJagVillPåverka).händelse();	
+					</code>
+					</p>
+				</div>
+				</div>
+				<div class="hider">
+					<button id="magic">Magic</button>
+					<button id="newMagic">More</button>
+					<p class="hideMe">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec fringilla lorem. Nullam vel magna bibendum nisl porttitor rhoncus. Morbi tempus nec ligula ultrices malesuada. Quisque est tortor, blandit in malesuada sed, aliquam sit amet ex. Maecenas nunc ipsum, pulvinar id dolor sed, pharetra pulvinar massa. Aliquam eleifend augue vitae vestibulum rhoncus. Vivamus vel leo felis. Integer imperdiet justo odio, ac varius metus venenatis non. Nullam accumsan varius nibh, sed euismod sem pellentesque vitae. Praesent vulputate nulla in augue molestie pretium. In hac habitasse platea dictumst. Proin et ante id arcu facilisis rutrum. Pellentesque cursus, ante ut lacinia malesuada, ante quam efficitur purus, eget cursus arcu urna id felis.
+					</p>
+				</div>
 		</div>
 	</div>
 </body>
