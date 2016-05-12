@@ -6,10 +6,15 @@
 	<script src="jQuery/jquery-1.12.3.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function(){			//Gör samma sak som OLD men snyggare och med bara en knapp.
 			$("button").click(function() {
-			$(".hideMe").fadeToggle();
+				$(".hideMe").fadeToggle();//Here's where the magic happens
 			});
+			
+			/*
+			-----OLD-----
+			*/
+			
 			/*$("#magic").click(function(){		//Gömmer texten.hideMe och visar en ny knapp "newMagic" (Undo) 
 				/*$(".hideMe").hide();
 				$("#newMagic").show();
@@ -35,6 +40,10 @@
 					<h2>Gömm och visa ett element</h2>
 					<p>
 						Texten under knappen till höger kommer att försvinna när man trycker på kanppen "Magic" och en ny knapp kommer framm. När man trycker på den nya knappen kommer texten tillbaka och den andra knappen försvinner.
+					</p>
+					<h3>Uppdatering 1.1</h3>
+					<p>
+						Hider använder sig nu utav en knapp istället för 2. Detta sker med hjälp av metoden .fadeToggle() vilket ger en snyggare animation och möjligheten att använda en knapp istället för 2.
 					</p>
 					<h3>Problem under kodningen:</h3>
 					<p>
