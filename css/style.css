@@ -26,7 +26,7 @@ button{
 	width: 48%;
 	padding-left: 2%;
 	float: left;
-	margin-top: 3.5em;
+	margin-top: 2.5%;
 }
 /****************
 COMMENTS
@@ -41,5 +41,5 @@ COMMENTS
 	color: red;
 }
 code{
-	background-color: #C3BBB9;
+	background-color: lightgray;
 }
