@@ -23,8 +23,8 @@ button{
 }
 
 .hider{
-	max-width: 40%;
-	padding-left: 10px;
+	width: 48%;
+	padding-left: 2%;
 	float: left;
 	margin-top: 3.5em;
 }
@@ -32,9 +32,9 @@ button{
 COMMENTS
 ****************/
 .comment{
-	max-width: 40%;
+	width: 47%;
 	border-right: 1px solid black;
-	padding-right: 10px;
+	padding-right: 2%;
 	float: left;
 }
 .dubbelfnuttar{
