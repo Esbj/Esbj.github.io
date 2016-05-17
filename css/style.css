@@ -12,6 +12,11 @@ h1, h2{
 hr{
 	max-width: 700px;
 }
+.sakEtt{
+	overflow: auto;
+	padding-bottom: 10px;
+	border-bottom: solid black 1px;
+}
 /***************
 HIDER
 ***************/
@@ -28,6 +33,7 @@ button{
 	float: left;
 	margin-top: 2.5%;
 }
+
 /****************
 COMMENTS
 ****************/
