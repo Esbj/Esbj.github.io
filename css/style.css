@@ -1,5 +1,5 @@
 /***************
-BASIC STYLING
+  BASIC STYLING
 ***************/
 .content{
   margin: auto;
@@ -17,8 +17,36 @@ hr{
 	padding-bottom: 10px;
 	border-bottom: solid black 1px;
 }
+/*NAV*/
+ul{
+	max-width: 30%;
+	text-align: center;
+	margin: 0 auto;
+}
+li{
+	display: inline;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+li:last-of-type{
+	border: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: underline;
+}
+a.active{
+	font-weight: bold;
+}
+a.active:hover{
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
 /***************
-HIDER
+  HIDER
 ***************/
 button{
 	display: inline;
@@ -35,13 +63,15 @@ button{
 }
 
 /****************
-COMMENTS
+  COMMENTS ON CODE PAGE
+  (+ patch notes)
 ****************/
 .comment{
 	width: 47%;
 	border-right: 1px solid black;
 	padding-right: 2%;
 	float: left;
+	overflow-x: scroll;
 }
 .dubbelfnuttar{
 	color: red;
@@ -49,3 +79,6 @@ COMMENTS
 code{
 	background-color: lightgray;
 }
+/****************
+  COMMENT PAGE
+****************/
